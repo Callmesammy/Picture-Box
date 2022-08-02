@@ -53,12 +53,12 @@ public class Picture_Model {
         this.title = title;
         this.description = description;
     }
+      public Picture_Model() {
+    }
     
     private Icon image;
     private String title;
     private String description;
 
-    public Picture_Model() {
-    }
-    
+  
 }

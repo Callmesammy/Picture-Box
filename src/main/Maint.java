@@ -46,9 +46,8 @@ public class Maint extends javax.swing.JFrame {
         body1Layout.setHorizontalGroup(
             body1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, body1Layout.createSequentialGroup()
-                .addContainerGap(223, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 613, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 842, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
         body1Layout.setVerticalGroup(
             body1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

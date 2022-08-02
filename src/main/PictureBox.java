@@ -16,13 +16,13 @@ public class PictureBox extends javax.swing.JLayeredPane {
        
     }
 
-//  public void addItem(Picture_Model data){
-//      Picture_item item = new Picture_item();
-//      item.setData(data);
-//      Panel.add(item);
-//      Panel.repaint();
-//      Panel.revalidate();
-//  }
+  public void addItem(Picture_Model data){
+      Picture_item item = new Picture_item();
+      item.setData(data);
+      panel.add(item);
+      panel.repaint();
+      panel.revalidate();
+  }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -31,22 +31,11 @@ public class PictureBox extends javax.swing.JLayeredPane {
         panel = new javax.swing.JPanel();
         scroller1 = new main.Scroller();
 
+        jScrollPane1.setBorder(null);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
         jScrollPane1.setHorizontalScrollBar(scroller1);
 
         panel.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
-        panel.setLayout(panelLayout);
-        panelLayout.setHorizontalGroup(
-            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelLayout.setVerticalGroup(
-            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 210, Short.MAX_VALUE)
-        );
-
         jScrollPane1.setViewportView(panel);
 
         scroller1.setOrientation(javax.swing.JScrollBar.HORIZONTAL);

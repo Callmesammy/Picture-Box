@@ -29,6 +29,7 @@ public class Picture_item extends javax.swing.JPanel {
     }
     
     private Picture_Model data;
+    
         public void setData(Picture_Model data) {
         this.data = data;
         ibiTitle.setText(data.getTitle());
@@ -48,11 +49,11 @@ public class Picture_item extends javax.swing.JPanel {
         ibidescription = new javax.swing.JLabel();
 
         ibiTitle.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        ibiTitle.setForeground(new java.awt.Color(36, 19, 40));
+        ibiTitle.setForeground(new java.awt.Color(245, 245, 245));
         ibiTitle.setText("Business Ideas");
 
         ibidescription.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        ibidescription.setForeground(new java.awt.Color(36, 19, 40));
+        ibidescription.setForeground(new java.awt.Color(245, 245, 245));
         ibidescription.setText("Business Ideas");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -80,7 +81,7 @@ public class Picture_item extends javax.swing.JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         if (data != null) {
-            Graphics2D g2 = (Graphics2D)g;
+        Graphics2D g2 = (Graphics2D)g;
         g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
         Rectangle size = getAutoSize(data.getImage());
         g2.drawImage(toImage(data.getImage()),size.x,size.y,size.width,size.height, null); 
@@ -89,7 +90,7 @@ public class Picture_item extends javax.swing.JPanel {
         super.paintComponent(g); 
     }
 
-    public Image toImage(Icon image){
+    private Image toImage(Icon image){
         return ((ImageIcon)image).getImage();
     }
     

@@ -12,16 +12,19 @@ import javax.swing.ImageIcon;
  */
 public class Picture_Body extends javax.swing.JPanel {
 
-    /**
-     * Creates new form Picture_Body
-     */
+    
     public Picture_Body() {
         initComponents();
+        init();
     }
 
-// private void init(){
-//     pictureBox1.addItem(new Picture_Model(new ImageIcon(getClass().getResource("/passport/pack/002.png")), "Pics", "the description"));
-// }
+ private void init(){
+     pictureBox1.addItem(new Picture_Model(new ImageIcon(getClass().getResource("/passport/pack/002.png")), "Pics", "the description"));
+     pictureBox1.addItem(new Picture_Model(new ImageIcon(getClass().getResource("/passport/pack/002.png")), "Pics", "the description"));
+     pictureBox1.addItem(new Picture_Model(new ImageIcon(getClass().getResource("/passport/pack/002.png")), "Pics", "the description"));
+     pictureBox1.addItem(new Picture_Model(new ImageIcon(getClass().getResource("/passport/pack/002.png")), "Pics", "the description"));
+     pictureBox1.addItem(new Picture_Model(new ImageIcon(getClass().getResource("/passport/pack/002.png")), "Pics", "the description"));
+ }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
